@@ -142,18 +142,34 @@ nav a:hover {
 footer {
     color: #66C0E6;
     background-color: #2037C7;
-    padding-bottom: 12.5%;
-    text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-.footerArrangement {
-    display: flex;
+.footer {
+    margin-left: 2.5%;
+    padding-top: 1%; 
+}
+
+footer ul {
+    display: inline-flex;
     flex-direction: column;
-    justify-content: space-between;
+    margin-left: 2.5%;
 }
 
-.footerText {
+footer ul li {
     list-style-type: none;
+    padding-bottom: 22.5%;
 }
+
+.alignCookies {
+    margin-top: -4px;
+}
+
+.alignPrivacy {
+    margin-top: -1%;
+}
+
+/* .socialMedia {
+   
+} */
 
