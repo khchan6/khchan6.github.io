@@ -18,20 +18,55 @@
 			<a href="#">Home</a>
 
 			<!-- Dropdown Elements -->
+			<!-- Why Us -->
 			<div class="dropdown">
-				<a href="#whyUs" /><button class="dropbtn">Why us</button>
-
+				<a href="#whyUs"><button class="dropbtn">Why us</button></a>
+				
 				<div class="dropdown-content">
-
-					<a href="#">Our goals</a>
-					<a href="#">Our goals</a>
-
+					<ul><li><a href="#whyUs">Our goals</a></li></ul>	
+					<ul><li><img src="images/whyUsNav.jpg" alt="working together"></li></ul>
 				</div>
 			</div>
-			<!-- <a href="#whyUs">Why us</a> -->
-			<a href="#ourServices">Our services</a>
-			<a href="#ourSupport">Our support</a>
-			<a href="#contactUs">Contact us</a>
+
+			<div>
+			<!-- Our Service -->
+			<div class="dropdown">
+				<a href="#ourServices"><button class="dropbtn">Our services</button></a>
+				
+				<div class="dropdown-content" style="margin-left: 18.2%; min-width: 40%;">
+					<ul><li><a href="#ourServices">Consulting services</a></li></ul>	
+					<ul><li><a href="#ourServices">QA services</a></li></ul>	
+					<ul><li><a href="#ourServices">Audit services</a></li></ul>	
+				</div>
+
+				<div class="dropdown-content" 
+					 style="margin-left: 29.5%; box-shadow: none; background-color: #ffffff00;
+					 margin-top: 2.65%">
+					<ul><li><a href="#ourServices">Application services</a></li></ul>
+					<ul><li>
+						<img src="images/ourServiceNav.jpg" alt="services" 
+							 style="margin-bottom: 1%; margin-right: 7.5%;">
+					</li></ul>
+				</div>
+			</div>
+			
+			<!-- Our Support -->
+			<div class="dropdown">
+				<a href="#ourServices"><button class="dropbtn">Our Support</button></a>
+				
+				<div class="dropdown-content" style="margin-left: 26.75%; min-width: 27.5%;">
+					<ul><li style="margin-top: 1%; color: black; font-size: 21px; font-weight: bold;">
+						Resources
+						<img src="images/ourSupportNav.jpg" alt="support" 
+							 style="margin-top: 2.5%; margin-bottom: 0; margin-top: 3.5%;">
+					</li></ul>	
+					<ul><li style="margin-bottom: 0; margin-top: -22%"><a href="#">FAQ</a></li></ul>	
+					<ul><li style="margin-top: -23%"><a href="#newsletter">Newsletter</a></li></ul>	
+				</div>	
+			</div>
+		</div>
+
+		<a href="#contactUs">Contact us</a>
 
 
 			<!-- search bar -->
@@ -203,6 +238,7 @@
 				</div>
 			</div>
 		</section>
+		<section id="newsletter">
 		<div class="container5">
 			<div class="column">
 				<div style="text-align:center left;">
@@ -216,7 +252,7 @@
 
 
 				<h5>Please provide your Email address</h5>
-				<input type="text" placeholder="Email address" name="mail" required>
+				<input class="rightSideOfNewsletter" type="text" placeholder="Email address" name="mail" required>
 
 				<br>
 				<button class="button"> Subscribe </button>
@@ -235,25 +271,25 @@
 			<p style=" text-align:left">
 				<label>
 					Name :
-					<input type="text" placeholder="Enter Name" name="text box" required />
+					<input class="rightSideOfNewsletter" type="text" placeholder="Enter Name" name="text box" required />
 				</label>
 			</p>
 			<p style=" text-align:left">
 				<label>
 					Email:
-					<input type="text" placeholder="Email address" name="mail" required />
+					<input class="rightSideOfNewsletter" type="text" placeholder="Email address" name="mail" required />
 				</label>
 			</p>
 			<p style=" text-align:left">
 				<label>
 					Subject :
-					<input type="text" placeholder=" " name="Subject" required />
+					<input class="rightSideOfNewsletter" type="text" placeholder=" " name="Subject" required />
 				</label>
 			</p>
 			<p style=" text-align:left">
 				<label>
 					Message:
-					<input type="text" placeholder=" " name="Message" required />
+					<input class="rightSideOfNewsletter" type="text" placeholder=" " name="Message" required />
 				</label>
 			</p>
 			<p style=" text-align:left">
