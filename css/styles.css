@@ -131,11 +131,11 @@ p8 {
     position: absolute;
     top: 66px;
     width: 480px;
-    color: #FFFFFF;
+    color: #de51a5;
     justify-content: center;
     flex-wrap: wrap;
     right: 0px;
-    left: 200px;
+    left: 240px;
     align-items: center;
     font-display: auto;
 }
@@ -439,6 +439,22 @@ button:hover {
     padding: 50px 58px;
     margin-top: -200px;
 }
+
+/* Create two equal columns that floats next to each other */
+.column5 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.column6 {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
 .column8 {
     float: right;
     width: 50%;
@@ -459,23 +475,6 @@ button:hover {
 * {
     box-sizing: border-box;
 }
-
-/* Create two equal columns that floats next to each other */
-.column5 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
-}
-.column6 {
-    float: right;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
-}
-
-
-
 
 /* Clear floats after the columns */
 .row:after {
@@ -576,7 +575,7 @@ button:hover {
 .img {
     background-size: cover;
     bottom: 0;
-    filter: contrast(.9) brightness(.5);
+    filter: contrast(.9) brightness(-.5);
     left: 100px;
     position: absolute;
     right: 0;
