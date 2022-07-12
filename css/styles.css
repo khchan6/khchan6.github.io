@@ -77,13 +77,14 @@ p4 {
     font-family: forma-djr-micro;
     font-style: normal;
     position: absolute;
-    top: 176px;
+    top: 150px;
     width: 380px;
+    line-height: 230%;
     color: whitesmoke;
     justify-content: center;
     flex-wrap: wrap;
     right: 0px;
-    margin-left:0px; 
+    margin-left: 0px;
     align-items: center;
     font-display: auto;
 }
@@ -114,8 +115,9 @@ p7 {
     font-family: AmstelvarAlpha;
     font-style: normal;
     position: absolute;
-    top: 66px;
+    top: 50px;
     width: 480px;
+    left: -230px;
     color: #FFFFFF;
     justify-content: center;
     flex-wrap: wrap;
@@ -129,13 +131,13 @@ p8 {
     font-family: AmstelvarAlpha;
     font-style: normal;
     position: absolute;
-    top: 66px;
+    top: 50px;
     width: 480px;
-    color: #de51a5;
+    color: #eff7ff;
     justify-content: center;
     flex-wrap: wrap;
     right: 0px;
-    left: 240px;
+    left: 260px;
     align-items: center;
     font-display: auto;
 }
@@ -145,13 +147,14 @@ p9 {
     font-family: forma-djr-micro;
     font-style: normal;
     position: absolute;
-    top: 176px;
+    top: 150px;
+    line-height: 210%;
     width: 380px;
     color: whitesmoke;
     justify-content: center;
     flex-wrap: wrap;
     right: 0px;
-    left: 340px;
+    left: 320px;
     align-items: center;
     font-display: auto;
 }
@@ -161,7 +164,7 @@ p10 {
     font-family: AmstelvarAlpha;
     font-style: normal;
     position: absolute;
-    top: 66px;
+    top: 50px;
     width: 480px;
     color: #FFFFFF;
     justify-content: center;
@@ -177,7 +180,8 @@ p11 {
     font-family: forma-djr-micro;
     font-style: normal;
     position: absolute;
-    top: 176px;
+    top: 150px;
+    line-height: 210%;
     width: 380px;
     color: whitesmoke;
     justify-content: center;
@@ -510,7 +514,7 @@ button:hover {
 }
 
 .container6 {
-    padding: 250px 90px;
+    padding: 290px 90px;
     background-color: #66C0E6;
 }
 /* PLease change this to a class */
@@ -572,16 +576,16 @@ button:hover {
         opacity: 0.1;
     }
 
+
 .img {
     background-size: cover;
     bottom: 0;
-    filter: contrast(.9) brightness(-.5);
     left: 100px;
     position: absolute;
     right: 0;
     top: 0;
 }
-
+  
 
 
 
