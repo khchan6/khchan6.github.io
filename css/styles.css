@@ -1,5 +1,5 @@
 ﻿/* Heading's and text */
-h1, h2, h3, h4, h5, h6,h7 {
+h1, h2, h3, h4, h5, h6 {
     font-family: forma-djr-display, sans-serif;
     font-style: normal;
 }
@@ -21,6 +21,7 @@ h2 {
 h3 {
     font-size: 48px;
     font-family: Amstelvar Alpha;
+    margin-top:950px;
 }
 
 h4 {
@@ -52,8 +53,9 @@ p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16 {
 }
 
 p1 {
-    font-weight: 400;
-    font-size: 6em;
+    font-size: 48px;
+    font-family: Amstelvar Alpha;
+    line-height: 123px;
 }
 
 p2 {
@@ -243,13 +245,12 @@ p15 {
 }
 
 p16 {
-    font-size: 32px;
+    font-size: 1.6vw;
     font-family: AmstelvarAlpha;
     font-style: normal;
     position: absolute;
-    top: 550px;
-    width: 590px;
-    left: 630px;
+    top: 530px;
+    left: -30px;
     color: #FFFFFF;
     justify-content: center;
     flex-wrap: wrap;
@@ -259,10 +260,12 @@ p16 {
 
 html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
     margin: 0;
+    display: inline-block;
 }
 
 /* Navigation */
@@ -618,19 +621,19 @@ button:hover {
 
 
 .img {
+    display: inline-block;
     background-size: cover;
     bottom: 0;
     left: 100px;
     position: absolute;
     right: 0;
     top: 0;
-   
 }
  
 /*image border for icons starting*/
 .img1 {
     border-radius: 100%;
-    display: flex;
+    display: inline-block;
     flex: 0 0 150px;
     height: 150px;
     justify-content: center;
