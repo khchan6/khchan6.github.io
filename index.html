@@ -94,28 +94,73 @@
 		<section id="ourServices">
 			<div class="main">
 				<center>
-					<div class="elementor-widget-container">
-						<div class="elementor-text-editor elementor-clearfix">
-							<img src="images/frontPage.jpg" alt="frontPart" style="min-width: 100%; height: 100%; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; left: 0; position: absolute; " />
-							<span>
-								<p15>
-									Buggy applications?
-								</p15>
-								<p16>
-									We can help
-								</p16>
-							</span>
 
-							<h3>What We Do</h3>
-							<h6 style="text-align: center;">
-								SQRLPro is a leading independent consulting company for application quality and reliablity testing.
-							</h6>
-							<h6 style="text-align: center;">
-								We also are software QA, audit and testing service provider. Our Center of Excellence (CoE) will help you archieve your testing goals with high quality,
-								high efficient at lower cost.
-							</h6>
+					<div class="slideshow-container">
+
+						<div class="mySlides fade">
+						 
+							<img src="images/frontPage.jpg" style="width: 101%; right: 0; left:-20px;  filter: contrast(.7) brightness(.5); opacity: 1; top: 0;height:900px;  position: absolute; ">
+
+						</div>
+
+						<div class="mySlides fade">
+							 
+							<img src="images/frontPage1.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 900px; position: absolute; ">
+
+						</div>
+
+						<div class="mySlides fade">
+							 <div class="currentslide(3)"></div>
+							<img src="images/frontPage.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 900px; position: absolute; ">
+
 						</div>
 					</div>
+				
+
+					<div style=" ">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+					<script>
+						let slideIndex = 0;
+						showSlides();
+
+						function showSlides() {
+							let i;
+							let slides = document.getElementsByClassName("mySlides");
+							let dots = document.getElementsByClassName("dot");
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";
+							}
+							slideIndex++;
+							if (slideIndex > slides.length) { slideIndex = 1 }
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex - 1].style.display = "block";
+							dots[slideIndex - 1].className += " active";
+							setTimeout(showSlides, 20000); // Change image every 2 seconds
+						}
+					</script>
+					<span>
+						<p15>
+							Buggy applications?
+						</p15>
+						<p16>
+							We can help
+						</p16>
+					</span>
+
+					<h3>What We Do</h3>
+					<h6 style="text-align: center;">
+						SQRLPro is a leading independent consulting company for application quality and reliablity testing.
+					</h6>
+					<h6 style="text-align: center;">
+						We also are software QA, audit and testing service provider. Our Center of Excellence (CoE) will help you archieve your testing goals with high quality,
+						high efficient at lower cost.
+					</h6>
+
 				</center>
 
 
@@ -173,7 +218,7 @@
 								<div class="column1">
 									<div class=" container ">
 										<div class="img" >
-										<img src="images/quality.jpg" style="width: 420px; height: 420px; margin-left: -200px; margin-top: -20px;   filter: contrast(.7) brightness(.5)  /* margin-right: 800px;  */">
+										<img src="images/quality.jpg" style="width: 420px; height: 420px; margin-left: -347px; margin-top: -22px; position: absolute; background-position: center center; background-repeat: no-repeat; filter: contrast(.7) brightness(.5) /* margin-right: 800px;  */ ">
 										<div class="content">
 											<b><p7> Quality  </p7></b>
 											<span>
@@ -182,7 +227,7 @@
 													It also helps  to enhance the customer experience to gain a competitive edge of embedding the best quality in delivering the solutions.
 												</p4>
 											</span>
-											<img src="images/collaboration.jpg" style=" width: 420px; height: 420px; margin-left: 300px; margin-top: -420px; filter: contrast(.7) brightness(.5) /* margin-right: 800px;  ; */ ">
+											<img src="images/collaboration.jpg" style=" width: 420px; height: 420px; margin-left: 168px; margin-top: -22px; position: absolute; background-position: center center; background-repeat: no-repeat; filter: contrast(.7) brightness(.5) /* margin-right: 800px;  ; */ ">
 											<b><p8> Collaboration</p8></b>
 											<span>
 												<p9>
@@ -190,7 +235,7 @@
 													solutions to uplift a new service to our employees, clients and stakeholders.
 												</p9>
 											</span>
-											<img src="images/innovation.jpg" style="width: 420px; height: 420px; margin-left: 800px; margin-top: -420px; filter: contrast(.7) brightness(.5) /* margin-right: 800px;  */">
+											<img src="images/innovation.jpg" style="width: 420px; height: 420px; margin-left: 678px; margin-top: -22px; position: absolute; background-position: center center; background-repeat: no-repeat; filter: contrast(.7) brightness(.5) /* margin-right: 800px;  */">
 											<b><p10> Innovation </p10></b>
 											<span>
 												<p11>
