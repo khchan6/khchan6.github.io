@@ -28,8 +28,7 @@ h4 {
     font-size: 48px;
     font-family: AmstelvarAlpha;
     font-weight: bold;
-    margin-top: -300px;
- }
+}
 
 h5 {
     font-size: 24px;
@@ -79,16 +78,12 @@ p4 {
     font-family: forma-djr-micro;
     font-style: normal;
     position: absolute;
-    top: 150px;
-    width: 380px;
-    line-height: 230%;
+    margin-top: 130px;
+    width: 386px;
+    line-height: 220%;
     color: whitesmoke;
-    justify-content: center;
-    flex-wrap: wrap;
-    right: 0px;
-    left: -116%;
-    align-items: center;
-    
+    margin-left: -401px;
+    margin-right: 0px;
 }
 
 p5 {
@@ -116,15 +111,10 @@ p7 {
     font-size: 32px;
     font-family: AmstelvarAlpha;
     font-style: normal;
-    position: absolute;
-    top: 50px;
-    width: 480px;
-    left: -150%;
     color: #FFFFFF;
-    justify-content: center;
-    flex-wrap: wrap;
-    right: 0px;
-    align-items: center;
+    margin-left: -263px;
+    top: 27px;
+    position: absolute;
 }
 
 p8 {
@@ -132,14 +122,9 @@ p8 {
     font-family: AmstelvarAlpha;
     font-style: normal;
     position: absolute;
-    top: 50px;
-    width: 480px;
+    margin-top: -348px;
     color: #eff7ff;
-    justify-content: center;
-    flex-wrap: wrap;
-    right: 0px;
-    left: 128%;
-    align-items: center;
+    margin-left: -291px;
 }
 
 p9 {
@@ -147,15 +132,11 @@ p9 {
     font-family: forma-djr-micro;
     font-style: normal;
     position: absolute;
-    top: 150px;
-    line-height: 210%;
-    width: 380px;
+    margin-top: -244px;
+    line-height: 36px;
+    width: 386px;
     color: whitesmoke;
-    justify-content: center;
-    flex-wrap: wrap;
-    right: 0px;
-    left: 150%;
-    align-items: center;
+    margin-left: -409px;
 }
 
 p10 {
@@ -163,14 +144,9 @@ p10 {
     font-family: AmstelvarAlpha;
     font-style: normal;
     position: absolute;
-    top: 50px;
-    width: 480px;
+    margin-top: -348px;
     color: #FFFFFF;
-    justify-content: center;
-    flex-wrap: wrap;
-    right: 0px;
-    left: 750px;
-    align-items: center;
+    margin-left: -290px;
 }
 
 p11 {
@@ -178,15 +154,11 @@ p11 {
     font-family: forma-djr-micro;
     font-style: normal;
     position: absolute;
-    top: 150px;
+    margin-top: -243px;
     line-height: 210%;
     width: 380px;
     color: whitesmoke;
-    justify-content: center;
-    flex-wrap: wrap;
-    right: 0px;
-    left: 800px;
-    align-items: center;
+    margin-left: -393px;
 }
 
 p12 {
@@ -229,14 +201,9 @@ p15 {
     font-family: AmstelvarAlpha;
     font-style: normal;
     position: absolute;
-    top: 400px;
-    left: -30px;
+    margin-top: 377px;
+    margin-left: -256px;
     color: #FFFFFF;
-    justify-content: center;
-    flex-wrap: wrap;
-    right: 0px;
-    align-items: center;
-    
 }
 
 p16 {
@@ -426,16 +393,95 @@ button:hover {
 }
 
 .sidebar1 {
-    flex: 35px;
     background-color: #EFF7FF;
-    padding: 340px;
-    margin-top: -140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 448px;
+    margin-left: auto
 }
 
+.sidebar1::before {
+        display: table;
+        content: " ";
+}
+
+.sidebar1::after {
+        display: table;
+        content: " ";
+}
+
+ .column9::before {
+    display: table;
+    content: " ";
+}
+
+.column9 {
+    margin-right: -1%;
+    margin-left: -15px;
+}
+
+ .column9::after {
+    display: table;
+    content: " ";
+  }
+@media (min-width: 992px) {
+    .col-md-3, .col-md-4, .col-md-5 {
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-3, .col-md-4, .col-md-5 { 
+        width: 33%;
+    }
+}
+
+.col-md-3, .col-md-4, .col-md-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.text23 {
+    text-size-adjust: auto;
+    padding: 0px;
+    position: absolute;
+    margin-left: 19%;
+    margin-top: -24%;
+    text-align: center;
+}
+
+.text24 {
+    text-size-adjust: auto;
+    padding: 0px;
+    position: absolute;
+    margin-left: 19%;
+    margin-top: -24%;
+    text-align: center;
+}
+
+.column10 {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    scroll-margin-top: 7em; /* Adjust this value to move the positioned div up and down */
+    background: rgba(0, 0, 0, 0.8);
+    font-family: Arial,sans-serif;
+    color: #fff;
+ 
+}
+ 
+.content1 {
+    width: 40%;
+}
+.content {
+    width: 40%;
+}
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 .column {
     float: left;
     width: 50%;
@@ -450,7 +496,6 @@ button:hover {
     padding: 0 5px;
     margin-top: 35px;
 }
-
 .column2 {
     float: left;
     width: 50%;
@@ -569,14 +614,6 @@ button:hover {
     position: relative;
     text-align: center;
     color: black;
-  
-}
-
-.centered {
-    position: absolute;
-    top: 70%;
-    left: 60%;
-    transform: translate(-60%, -60%);
 }
 
 .button {
