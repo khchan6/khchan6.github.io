@@ -25,18 +25,19 @@
 			<!-- Dropdown Elements -->
 			<!-- Why Us -->
 			<div class="dropdown">
-				<a href="#whyUs" /><button class="dropbtn">Why us</button>
+				<a href="whys.html" id="why us" /><button class="dropbtn">Why us</button>
+				
 
 				<div class="dropdown-content">
-					<ul><li><a href="#whyUs">Our goals</a></li></ul>
-					<ul><li><img src="images/whyUsNav.jpg" alt="working together"></li></ul>
+					<a href="#whyus" id="Ourgoals" name="ourgoals"> Our goals</a>
+					<img src="images/whyUsNav.jpg" alt="working together">
 				</div>
 			</div>
 
 			<div>
 				<!-- Our Service -->
 				<div class="dropdown">
-					<a href="#ourServices" /><button class="dropbtn">Our services</button>
+					<a href="#ourServices" id="ourServices" /><button class="dropbtn">Our services</button>
 
 					<div class="dropdown-content" style="margin-left: 12.5%; min-width: 44%;">
 						<ul><li><a href="#ourServices">Consulting services</a></li></ul>
@@ -44,8 +45,7 @@
 						<ul><li><a href="#ourServices">Audit services</a></li></ul>
 					</div>
 
-					<div class="dropdown-content"
-						 style="margin-left: 26.5%; box-shadow: none; background-color: #ffffff00; margin-top: 3.1%; min-width: 24%;">
+					<div class="dropdown-content" style="margin-left: 26.5%; box-shadow: none; background-color: #ffffff00; margin-top: 3.1%; min-width: 24%;">
 						<ul><li><a href="#ourServices">Application services</a></li></ul>
 						<ul>
 							<li>
@@ -73,7 +73,7 @@
 				</div>
 			</div>
 			<div style="margin-left:1px;">
-				<a href="" title="Home Page">Home Page</a>
+				<a href="#" title="Home Page">Home Page</a>
 			</div>
 			<a href="#contactUs">Contact us</a>
 
@@ -113,17 +113,22 @@
 						</div>
 						<div class="mySlides fade">
 							<div class="currentslide(3)"></div>
-							<img src="images/frontPage.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 875px; position: absolute; ">
+							<img src="images/frontPage2.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 875px; position: absolute; ">
+						</div>
+						<div class="mySlides fade">
+							<div class="currentslide(4)"></div>
+							<img src="images/frontPage3.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 875px; position: absolute; ">
 						</div>
 						<a class="prev" onclick="plusSlides(-1)">❮</a>
 						<a class="next" onclick="plusSlides(1)">❯</a>
 					</div>
 						<br>
-					<div style="text-align:center">
-						<span class="dot" onclick="currentSlide(1)"></span>
-						<span class="dot" onclick="currentSlide(2)"></span>
-						<span class="dot" onclick="currentSlide(3)"></span>
-					</div>
+						<div style="text-align:center">
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+							<span class="dot" onclick="currentSlide(3)"></span>
+							<span class="dot" onclick="currentSlide(4)"></span>
+						</div>
 					<script>
 						let slideIndex = 1;
 						showSlides(slideIndex);
@@ -173,7 +178,7 @@
 					<div class="parent row">
 						<div class="column5">
 
-							<img src="icons/qualityBLue.png" alt="consulting" style=" width: 100px; height: 100px; margin-top: -68px;   margin-bottom: -45px;" />
+							<img src="icons/consultingblue.png" alt="consulting" style="width: 118px; height: 118px; margin-top: -68px; margin-bottom: -45px; " />
 							<h5>Consulting Services</h5>
 							<p6>
 								At SQRLPro, we help solving client’s complex issues, deliver strategy and implementation, for both business and technology. You can count on us to
@@ -341,8 +346,14 @@
 							<input type="text" style="height: 45px; width: 340px; font-size: 20px; " placeholder="Email address" name="mail" required>
 							<br>
 							<br >
-							<button class="button"> Subscribe </button>
-							 
+							<button class="button1" name="subbtn" id="subscribe" onclick="myFunction()"> Subscribe </button>
+							<script>
+								document.getElementById("myForm").addEventListener("submit", myFunction);
+
+								function myFunction() {
+                                    alert("Thanks for subscribing to Our NewsLetter");
+								}
+							</script>
 						</div>
 					</div>
 					</div>
@@ -429,3 +440,4 @@
 	</footer>
 </body>
 </html>
+
