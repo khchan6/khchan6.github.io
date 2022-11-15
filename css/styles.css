@@ -193,8 +193,8 @@ p14 {
     word-spacing: normal;
     word-wrap: break-word;
     text-align: justify;
+    line-height: 159%;
     top: 600px;
-    
 }
 
 p15 {
@@ -316,7 +316,7 @@ button:hover {
     /* Links inside the dropdown */
     .dropdown-content a {
         color: black;
-        padding: 0.1% 1.1px;
+        padding: 0.1% 11.1px;
         text-align: left;
         display: block;
         margin-bottom: -0.25%;
@@ -366,7 +366,7 @@ button:hover {
 
     .navForm .search-container button {
         float: right;
-        padding: 7px 10px;
+        padding-bottom: 10px;
         margin-top: 8px;
         margin-right: 35px;
         background: #fafafa;
@@ -705,7 +705,7 @@ button:hover {
         margin: 0
     }
 
-    .mySlides {
+    .Slides {
         display: none;
     }
 
@@ -719,6 +719,13 @@ button:hover {
         position: relative;
         margin: auto;
     }
+
+/* Slideshow container */
+    .slideshow-container1 {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+}
 
     /* Next & previous buttons */
 .prev, .next {
