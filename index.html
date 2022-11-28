@@ -28,9 +28,9 @@
 				<a href="whys.html" id="why us" /><button class="dropbtn">Why us</button>
 				
 
-				<div class="dropdown-content">
-					<a href="#whyus" id="Ourgoals" name="ourgoals"> Our goals</a>
-					<img src="images/whyUsNav.jpg" alt="working together">
+				<div class="dropdown-content" style="margin-left: 5.5%; min-width: 28%;">
+					<a href="#whyus" id="Ourgoals" name="ourgoals" style="margin-left: 6%; margin-top: 7%; margin-bottom:-1%; margin-right:371px;" > Our goals</a>
+					<img src="images/whyUsNav.jpg" alt="working together" style="margin-bottom: 5%; margin-right: -0.5%; margin-left:47%; margin-top:-4% ">
 				</div>
 			</div>
 
@@ -73,9 +73,9 @@
 				</div>
 			</div>
 			<div style="margin-left:1px;">
-				<a href="#" title="Home Page">Home Page</a>
+				<a href="contactus.html">Contact us</a>
 			</div>
-			<a href="contactus.html">Contact us</a>
+
 
 
 			<!-- search bar -->
@@ -87,7 +87,6 @@
 					</form>
 				</div>
 			</div>
-
 		</nav>
 	</header>
 
@@ -108,55 +107,7 @@
 								We can help
 							</p16>
 						</div>
-						<div class="mySlides fade">
-							<img src="images/frontPage1.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 875px; position: absolute; ">
-						</div>
-						<div class="mySlides fade">
-							<div class="currentslide(3)"></div>
-							<img src="images/frontPage2.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 875px; position: absolute; ">
-						</div>
-						<div class="mySlides fade">
-							<div class="currentslide(4)"></div>
-							<img src="images/frontPage3.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 875px; position: absolute; ">
-						</div>
-						<a class="prev" onclick="plusSlides(-1)">❮</a>
-						<a class="next" onclick="plusSlides(1)">❯</a>
-					</div>
-						<br>
-						<div style="text-align:center">
-							<span class="dot" onclick="currentSlide(1)"></span>
-							<span class="dot" onclick="currentSlide(2)"></span>
-							<span class="dot" onclick="currentSlide(3)"></span>
-							<span class="dot" onclick="currentSlide(4)"></span>
-						</div>
-					<script>
-						let slideIndex = 1;
-						showSlides(slideIndex);
-
-						function plusSlides(n) {
-							showSlides(slideIndex += n);
-						}
-
-						function currentSlide(n) {
-							showSlides(slideIndex = n);
-						}
-
-						function showSlides(n) {
-							let i;
-							let slides = document.getElementsByClassName("mySlides");
-							let dots = document.getElementsByClassName("dot");
-							if (n > slides.length) { slideIndex = 1 }
-							if (n < 1) { slideIndex = slides.length }
-							for (i = 0; i < slides.length; i++) {
-								slides[i].style.display = "none";
-							}
-							for (i = 0; i < dots.length; i++) {
-								dots[i].className = dots[i].className.replace(" active", "");
-							}
-							slides[slideIndex - 1].style.display = "block";
-							dots[slideIndex - 1].className += " active";
-						}
-					</script>
+						
 				</center>
 		</div>
 
@@ -240,7 +191,7 @@
 						</p9>
 					</div>
 					<div class="col-md-5">
-						<img src="images/innovation.jpg" style="width: 420px; height: 420px; margin-left: 971px; margin-top: -422px; position: relative; background-repeat: no-repeat; filter: contrast(.7) brightness(.5) ">
+						<img src="images/innovation.jpg" style="width: 420px; height: 420px; margin-left: 971px; margin-top: -464px; position: relative; background-repeat: no-repeat; filter: contrast(.7) brightness(.5) ">
 						<b><p10> Innovation </p10></b>
 						<p11>
 							SQRL improves the constant innovation and able to find new improved solution to every challenge and securing
