@@ -7,7 +7,6 @@
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.typekit.net/vaw1ixb.css">
-	<link rel="stylesheet" href="https://use.typekit.net/vaw1ixb.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -17,19 +16,17 @@
 	<header>
 		<!-- Navigation Bar -->
 		<nav>
-			<a class="sqrlLogo">
-				<img class="logo" src="icons/logo.png" alt="logo">
+			<a  class="sqrlLogo" href="index.html">
+				<img  class="logo"  src="icons/newlogo3.png" alt="logo">
 			</a>
-
-
 			<!-- Dropdown Elements -->
 			<!-- Why Us -->
 			<div class="dropdown">
-				<a href="whys.html" id="why us" /><button class="dropbtn">Why us</button>
-				
+				<a href="#whyus" id="why us" /><button class="dropbtn">Why us</button>
 
-				<div class="dropdown-content" style=" margin-left: 3.5%; min-width: 14%; height: 265px;">
-					<a href="#whyus" id="Ourgoals" name="ourgoals" style="margin-left: 17%; margin-top: 5%; margin-bottom: 0%; margin-right: 94px; " > Our goals</a>
+
+				<div class="dropdown-content" style=" margin-left: 3.5%; min-width: 14%;">
+					<a href="#whyus" id="Ourgoals" name="ourgoals" style="margin-left: 20%; margin-top: 5%; margin-bottom: 0%; margin-right: 58px; "> Our goals</a>
 					<img src="images/whyUsNav.jpg" alt="working together" style="margin-bottom: 1%; margin-right: 1.5%; margin-left: 8%; margin-top: 6%; ">
 				</div>
 			</div>
@@ -72,7 +69,7 @@
 				</div>
 			</div>
 			<div style="margin-left:1px;">
-				<a href="contactus.html">Contact us</a>
+				<a href="#contactus">Contact us</a>
 			</div>
 
 
@@ -95,10 +92,9 @@
 		<section id="ourServices">
 			<div class="main">
 				<center>
-
 					<div class="slideshow-container">
 						<div class="mySlides fade">
-							<img src="images/frontPage.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 875px; position: absolute; ">
+							<img src="images/frontPage2.jpg" style="width: 101%; right: 0; left: -18px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 875px; position: absolute; ">
 							<p15>
 								Buggy applications?
 							</p15>
@@ -106,9 +102,73 @@
 								We can help
 							</p16>
 						</div>
+						<div class="mySlides fade">
+							<img src="images/frontpage5.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 875px; position: absolute; ">
+							<p17>
+								Concerned about Customer Experience?
+							</p17>
+							<p18>
+								We can help!
+							</p18>
 						</div>
+						<div class="mySlides fade">
+							<div class="currentslide(3)"></div>
+							<img src="images/frontpage9.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.9); opacity: 1; top: 0; height: 933px; position: absolute; ">
+							<p19>
+								Let us help your Services Stand Tall
+							</p19>
+							
+						</div>
+						<div class="mySlides fade">
+							<div class="currentslide(4)"></div>
+							<img src="images/frontpage3.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 904px; position: absolute; ">
+							<p21>
+								Customer Experience a bit thorny?
+							</p21>
+							<p22>
+								We can help!
+							</p22>
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">❮</a>
+						<a class="next" onclick="plusSlides(1)">❯</a>
+					</div>
+					<br>
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+					</div>
+					<script>
+						let slideIndex = 1;
+						showSlides(slideIndex);
+
+						function plusSlides(n) {
+							showSlides(slideIndex += n);
+						}
+
+						function currentSlide(n) {
+							showSlides(slideIndex = n);
+						}
+
+						function showSlides(n) {
+							let i;
+							let slides = document.getElementsByClassName("mySlides");
+							let dots = document.getElementsByClassName("dot");
+							if (n > slides.length) { slideIndex = 1 }
+							if (n < 1) { slideIndex = slides.length }
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";
+							}
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex - 1].style.display = "block";
+							dots[slideIndex - 1].className += " active";
+						}
+					</script>
 				</center>
-		</div>
+			</div>
 
 			<h3>What We Do</h3>
 			<h6 style="text-align: center;">
@@ -199,7 +259,7 @@
 					</div>
 					</div>
 				</div>
-</section>
+		</section>
 
 
 				<section id="ourSupport">
@@ -298,9 +358,7 @@
 							<br >
 							<button class="button1" name="subbtn" id="subscribe" onclick="myFunction()"> Subscribe </button>
 							<script>
-								document.getElementById("myForm").addEventListener("submit", myFunction);
-
-								function myFunction() {
+							function myFunction() {
                                     alert("Thanks for subscribing to Our NewsLetter");
 								}
 							</script>
@@ -355,7 +413,7 @@
 
 					</div>
 				</section>
-</main>
+	</main>
 
 	<!-- Footer Section -->
 	<footer>
@@ -383,7 +441,7 @@
 					<a href="https://www.facebook.com/"><img class="socialMedia" src="icons/facebook.png" alt="facebook"></a>
 					<a href="https://www.tumblr.com/explore/trending?source=homepage_explore"><img class="socialMedia" src="icons/tumbler.png" alt="tumbler"></a>
 					<a href="https://in.pinterest.com/"><img class="socialMedia" src="icons/pinterest.png" alt="pinterest"></a>
-</li>
+				</li>
 			</ul>
 			<img class="footerRightImg" src="images/footer.jpg" alt="people working">
 		</div>
