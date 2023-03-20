@@ -10,19 +10,23 @@ h1 {
     margin-left: 90px;
 }
 
+
 h2 {
     font-size: 18px;
     font-family: forma-djr-micro, sans-serif;
     font-style: normal;
     font-weight: normal;
+    line-height: 32px;
     margin: 0px;
 }
+
 
 h3 {
     font-size: 48px;
     font-family: Amstelvar Alpha;
-    margin-top:950px;
+    margin-top: 778px;
 }
+
 
 h4 {
     font-size: 48px;
@@ -46,7 +50,7 @@ h6 {
 }
  
 
-p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22 {
+p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23,p24 {
     font-family: forma-djr-micro, sans-serif;
     font-style: normal;
 }
@@ -62,8 +66,9 @@ p2 {
     font-family: forma-djr-micro, sans-serif;
     font-style: normal;
     position: absolute;
-    width:40%;
+    width: 33%;
     flex-wrap: wrap;
+    line-height: 34px;
     margin-left: 90px;
 }
 
@@ -193,7 +198,7 @@ p14 {
     word-spacing: normal;
     word-wrap: break-word;
     text-align: justify;
-    line-height: 159%;
+    line-height: 175%;
     top: 600px;
 }
 
@@ -250,7 +255,7 @@ P19 {
     font-family: AmstelvarAlpha;
     font-style: normal;
     position: absolute;
-    top: 312px;
+    top: 264px;
     left: -30px;
     color: #FFFFFF;
     justify-content: center;
@@ -278,8 +283,8 @@ p21 {
     font-family: AmstelvarAlpha;
     font-style: normal;
     position: absolute;
-    top: 418px;
-    left: 523px;
+    top: 352px;
+    left: 386px;
     color: #FFFFFF;
 }
 
@@ -297,14 +302,29 @@ p22 {
     align-items: center;
 }
 
+p23 {
+    font-size: 24px;
+    font-family: forma-djr-micro, sans-serif;
+    font-style: normal;
+    word-spacing: normal;
+    margin-top: 530px;
+    font-weight: bold;
+    word-wrap: break-word;
+    text-align: justify;
+    line-height: 175%;
+    
+}
+
 html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
 }
 
 body {
-    margin: 0;
+    margin: 0px; 
+    padding: 0px;
     display: inline-block;
+    resize: both;
 }
 
 /* Navigation */
@@ -363,7 +383,30 @@ button:hover {
     font-size: 20px;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+     
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+     
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+     
+}
 
 /* Dropdown Button */
 .dropbtn {
@@ -504,24 +547,28 @@ button:hover {
     margin-left: 84.25%;
 }
 
-.navForm input[type=text] {
-     padding: 6px;
-     margin-top: 8px;
-     font-size: 17px;
-     border: none;
-}
-
-    .navForm .search-container button {
-        float: right;
-        padding-bottom: 10px;
+    .navForm input[type=text] {
+        padding: 6px;
+        padding-right: 0px;
+        margin-left: 24px;
         margin-top: 8px;
-        margin-right: 35px;
-        background: #fafafa;
-        font-size: 18px;
+        font-size: 16px;
+        position: absolute;
         border: none;
-        cursor: pointer;
-        position:absolute;
     }
+
+
+.navForm .search-container button {
+    float: right;
+    padding-bottom: 10px;
+    margin-top: 8px;
+    margin-right: 35px;
+    background: #fafafa;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
 
 .navForm .search-container button:hover {
         background: #ccc;
@@ -544,6 +591,15 @@ button:hover {
 .navForm input[type=text] {
         border: 1px solid #ccc;
     }
+}
+
+button3 {
+    cursor: pointer;
+    width: 30px;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 188px;
+    position: absolute;
 }
 
     /* Body */
@@ -578,14 +634,14 @@ button:hover {
         padding: 50px;
     }
 
-    .sidebar1 {
-        background-color: #EFF7FF;
-        padding-right: 15px;
-        padding-left: 15px;
-        padding-bottom: 427px;
-        margin-left: -15px;
-        margin-top: -147px;
-    }
+.sidebar1 {
+    background-color: #bdccea;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 427px;
+    margin-left: -15px;
+    margin-top: -147px;
+}
 
         .sidebar1::before {
             display: table;
@@ -776,6 +832,7 @@ button:hover {
 
     .container {
         padding: 0 26px;
+        resize: both;
     }
 
         .container::after, .row::after {
@@ -784,10 +841,12 @@ button:hover {
             display: table;
         }
 
-    .container5 {
-        padding: 40px 20px;
-        background-color: #E0E8F8;
-    }
+        .container5 {
+         padding: 40px 30px;
+         margin-left: -20px;
+         margin-right: -4px;
+         background-color: #bdccea;
+        }
 
     .container6 {
         padding: 290px 90px;
@@ -892,7 +951,7 @@ button:hover {
     cursor: pointer;
     position: absolute;
     width: auto;
-    margin-top: 367px;
+    margin-top: 431px;
     margin-right: 12px;
     margin-left: -951px;
     color: white;
@@ -904,6 +963,11 @@ button:hover {
 }
 
     /* Position the "next button" to the right */
+    .prev {
+         left: 938px;
+         border-radius: 3px 0 0 3px;
+    }
+
     .next {
         right: 0;
         border-radius: 3px 0 0 3px;
@@ -935,18 +999,18 @@ button:hover {
     }
 
     /* The dots/bullets/indicators */
-    .dot {
-        cursor: pointer;
-        top: 930px;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-        position: relative;
-    }
+            .dot {
+               cursor: pointer;
+               top: 733px;
+               height: 15px;
+               width: 15px;
+               margin: 0 2px;
+               background-color: #bbb;
+               border-radius: 50%;
+               display: inline-block;
+               transition: background-color 0.6s ease;
+               position: relative;
+                }
 
         .active, .dot:hover {
             background-color: #717171;
@@ -1270,9 +1334,9 @@ footer {
     }
 
 .footerRightImg {
-        width: 11%;
+        width: 16%;
         height: auto;
-        margin-left: 10%;
+        margin-left: 1%;
         margin-bottom: -6%;
         position: absolute;
 }
