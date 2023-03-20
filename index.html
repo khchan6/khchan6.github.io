@@ -76,10 +76,13 @@
 
 			<!-- search bar -->
 			<div class="navForm">
+
 				<div class="search-container">
 					<form action="/action_page.php">
 						<input type="text" placeholder="Search.." name="search">
-						<button type="submit"><i class="fa fa-search"></i></button>
+						<button3>
+							<svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+						</button3>
 					</form>
 				</div>
 			</div>
@@ -94,7 +97,7 @@
 				<center>
 					<div class="slideshow-container">
 						<div class="mySlides fade">
-							<img src="images/frontPage2.jpg" style="width: 101%; right: 0; left: -18px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 875px; position: absolute; ">
+							<img src="images/frontPage2.jpg" data-delay="2ms"  style="width: 101%; right: 0; left: -18px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 727px; position: absolute; ">
 							<p15>
 								Buggy applications?
 							</p15>
@@ -103,7 +106,7 @@
 							</p16>
 						</div>
 						<div class="mySlides fade">
-							<img src="images/frontpage5.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 875px; position: absolute; ">
+							<img src="images/frontpage5.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 727px; position: absolute; ">
 							<p17>
 								Concerned about Customer Experience?
 							</p17>
@@ -113,15 +116,15 @@
 						</div>
 						<div class="mySlides fade">
 							<div class="currentslide(3)"></div>
-							<img src="images/frontpage9.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.9); opacity: 1; top: 0; height: 933px; position: absolute; ">
+						<img src="images/frontpage9.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.9); opacity: 1; top: 0; height: 727px; position: absolute; ">
 							<p19>
 								Let us help your Customers Stand Tall
 							</p19>
-							
+
 						</div>
 						<div class="mySlides fade">
 							<div class="currentslide(4)"></div>
-							<img src="images/frontpage3.jpg" style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 904px; position: absolute; ">
+							<img src="images/frontpage3.jpg" data-delay="2 ms"  style="width: 101%; right: 0; left: -20px; filter: contrast(.7) brightness(.5); opacity: 1; top: 0; height: 727px; position: absolute; ">
 							<p21>
 								Customer Experience a bit thorny?
 							</p21>
@@ -140,32 +143,26 @@
 						<span class="dot" onclick="currentSlide(4)"></span>
 					</div>
 					<script>
-						let slideIndex = 1;
-						showSlides(slideIndex);
+                        let slideIndex = 0;
+                        showSlides();
 
-						function plusSlides(n) {
-							showSlides(slideIndex += n);
-						}
-
-						function currentSlide(n) {
-							showSlides(slideIndex = n);
-						}
-
-						function showSlides(n) {
-							let i;
-							let slides = document.getElementsByClassName("mySlides");
-							let dots = document.getElementsByClassName("dot");
-							if (n > slides.length) { slideIndex = 1 }
-							if (n < 1) { slideIndex = slides.length }
-							for (i = 0; i < slides.length; i++) {
-								slides[i].style.display = "none";
-							}
-							for (i = 0; i < dots.length; i++) {
-								dots[i].className = dots[i].className.replace(" active", "");
-							}
-							slides[slideIndex - 1].style.display = "block";
-							dots[slideIndex - 1].className += " active";
-						}
+                        function showSlides() {
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) { slideIndex = 1 }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                            setTimeout(showSlides, 5000);
+                        }
+                        
 					</script>
 				</center>
 			</div>
@@ -374,13 +371,13 @@
 								<span>
 									Name :
 									<br />
-									<input type="text" placeholder="Enter Name" style="width:340px;font-size:14px;" name="text box" required />
+									<input type="text" placeholder="Enter Name" style="width: 340px; height: 32px; font-size: 14px;" name="text box" required />
 									<br />
 									<br />
 
 									Email Address:
 									<br />
-									<input type="text" placeholder="Email address" style="width:340px;font-size:14px;" name="mail" aria-required="true" />
+									<input type="text" placeholder="Email address" style="width: 340px; height: 32px; font-size: 14px;" name="mail1" aria-required="true" />
 								</span>
 								<br>
 								<br />
@@ -388,7 +385,7 @@
 							<p style=" text-align:left">
 								Subject :
 								<br>
-								<input type="text" placeholder=" " style=" width:340px;font-size:14px;" name="Subject" required />
+								<input type="text" placeholder=" " style=" width: 340px; height: 32px; font-size: 14px;" name="Subject" required />
 
 								<br />
 								<br />
@@ -397,16 +394,27 @@
 								<input id="text" style="height:120px;width:340px;font-size:14px;" placeholder=" " name="Message" required />
 
 								<br />
-								<button class="button"> Submit </button>
-
-						</div>
+								<button class="button" name="subbtn1" id="submit" onclick="myFunction1()" > Submit </button>
+								<script>
+									function myFunction1() {
+										alert("Thanks for Enrolling to SQRLPRO");
+									}
+								</script>
+</div>
 						<div class="column4">
 							<p13>Contact Us</p13>
 							<br><br />
 							<p14>
-								Feel free to reach out to us at 1-805-421-3421 or simply fill out the contact us form and one of the customer representative will contact you shortly.
-
+								Feel free to reach out to us at 1 208 996 2659 or 
+								simply fill out the contact us form and one of the customer representative will contact you shortly.
+								
 							</p14>
+							<p23>
+								Email address: contactus@sqrlpro.com
+							<br>
+								Phone number: 1 208 996 2659
+								
+							</p23>
 						</div>
 						
 						
@@ -439,7 +447,7 @@
 					<a href="https://twitter.com/i/flow/login"><img class="socialMedia" src="icons/twitter.png" alt="twitter"></a>
 					<a href="https://www.linkedin.com/home"><img class="socialMedia" src="icons/linkedin.png" alt="linkedin"></a>
 					<a href="https://www.facebook.com/"><img class="socialMedia" src="icons/facebook.png" alt="facebook"></a>
-					<a href="https://www.tumblr.com/explore/trending?source=homepage_explore"><img class="socialMedia" src="icons/tumbler.png" alt="tumbler"></a>
+					<a href="https://www.tumblr.com/explore/trending?redirect_to=%2Fexplore%2Ftrending&source=login_wall"><img class="socialMedia" src="icons/tumbler.png" alt="tumbler"></a>
 					<a href="https://in.pinterest.com/"><img class="socialMedia" src="icons/pinterest.png" alt="pinterest"></a>
 				</li>
 			</ul>
